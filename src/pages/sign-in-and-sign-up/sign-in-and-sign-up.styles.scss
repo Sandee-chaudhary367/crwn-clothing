@@ -1,3 +1,7 @@
-.sign-in-and-sign-up{
-    padding: 30px 25px;
-}
+.sign-in-and-sign-up {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 150px;
+  }

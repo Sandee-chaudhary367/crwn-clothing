@@ -9,6 +9,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Brown Brim',
+        status:'active',
         imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
         // imageUrl: "/images/shop-img/hats/brown-brim.png",
         price: 25
@@ -16,6 +17,7 @@ const SHOP_DATA = [
       {
         id: 2,
         name: 'Blue Beanie',
+        status:'active',
         imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
         // imageUrl: "/images/shop-img/hats/blue-beanie.png",
         price: 18
@@ -23,6 +25,7 @@ const SHOP_DATA = [
       {
         id: 3,
         name: 'Brown Cowboy',
+        status:'active',
         imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
         // imageUrl: "/images/shop-img/hats/brown-cowboy.png",
         price: 35
@@ -30,6 +33,7 @@ const SHOP_DATA = [
       {
         id: 4,
         name: 'Grey Brim',
+        status:'active',
         imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
         // imageUrl: "/images/shop-img/hats/grey-brim.png",
         price: 25
@@ -37,6 +41,7 @@ const SHOP_DATA = [
       {
         id: 5,
         name: 'Green Beanie',
+        status:'active',
         imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
         // imageUrl: "/images/shop-img/hats/green-beanie.png",
         price: 18
@@ -58,6 +63,7 @@ const SHOP_DATA = [
       {
         id: 8,
         name: 'Wolf Cap',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
         // imageUrl: "/images/shop-img/hats/wolf-cap.png",
         price: 14
@@ -65,6 +71,7 @@ const SHOP_DATA = [
       {
         id: 9,
         name: 'Blue Snapback',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
         // imageUrl: "/images/shop-img/hats/blue-snapback.png",
         price: 16
@@ -79,34 +86,39 @@ const SHOP_DATA = [
       {
         id: 10,
         name: 'Adidas NMD',
+        status:'active',
         imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
         // imageUrl: "/images/shop-img/sneakers/adidas-nmd.png", 
         price: 220
       },
       {
         id: 11,
-        name: 'Adidas Yeezy',
+        name: 'Adidas Yeezy', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
         // imageUrl: "/images/shop-img/sneakers/yeezy.png",
         price: 280
       },
       {
         id: 12,
-        name: 'Black Converse',
+        name: 'Black Converse', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
         // imageUrl: "/images/shop-img/sneakers/black-converse.png",
         price: 110
       },
       {
         id: 13,
-        name: 'Nike White AirForce',
+        name: 'Nike White AirForce', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
         // imageUrl: "/images/shop-img/sneakers/white-nike-high-tops.png",
         price: 160
       },
       {
         id: 14,
-        name: 'Nike Red High Tops',
+        name: 'Nike Red High Tops', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
         // imageUrl: "/images/shop-img/sneakers/nikes-red.png",
         price: 160
@@ -121,6 +133,7 @@ const SHOP_DATA = [
       {
         id: 16,
         name: 'Air Jordan Limited',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
         // imageUrl: "/images/shop-img/sneakers/nike-funky.png",
         price: 190
@@ -128,6 +141,7 @@ const SHOP_DATA = [
       {
         id: 17,
         name: 'Timberlands',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
         // imageUrl: "/images/shop-img/sneakers/timberlands.png",
         price: 200
@@ -141,28 +155,32 @@ const SHOP_DATA = [
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
+        name: 'Black Jean Shearling', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
         // imageUrl: "/images/shop-img/jackets/black-shearling.png",
         price: 125
       },
       {
         id: 19,
-        name: 'Blue Jean Jacket',
+        name: 'Blue Jean Jacket', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
         // imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
         price: 90
       },
       {
         id: 20,
-        name: 'Grey Jean Jacket',
+        name: 'Grey Jean Jacket', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
         // imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
         price: 90
       },
       {
         id: 21,
-        name: 'Brown Shearling',
+        name: 'Brown Shearling', 
+        status:'active',
         imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
         // imageUrl: "/images/shop-img/jackets/brown-shearling.png",
         price: 165
@@ -184,6 +202,7 @@ const SHOP_DATA = [
       {
         id: 23,
         name: 'Blue Tanktop',
+         status:'active',
         imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
         // imageUrl: "/images/shop-img/womens/blue-tank.png",
         price: 25
@@ -191,6 +210,7 @@ const SHOP_DATA = [
       {
         id: 24,
         name: 'Floral Blouse',
+         status:'active',
         imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
         // imageUrl: "/images/shop-img/womens/floral-blouse.png",
         price: 20
@@ -198,6 +218,7 @@ const SHOP_DATA = [
       {
         id: 25,
         name: 'Floral Dress',
+         status:'active',
         imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
         // imageUrl: "/images/shop-img/womens/floral-skirt.png",
         price: 80
@@ -205,6 +226,7 @@ const SHOP_DATA = [
       {
         id: 26,
         name: 'Red Dots Dress',
+         status:'active',
         imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
         // imageUrl: "/images/shop-img/womens/red-polka-dot-dress.png",
         price: 80
@@ -219,6 +241,7 @@ const SHOP_DATA = [
       {
         id: 28,
         name: 'Yellow Track Suit',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
         // imageUrl: "/images/shop-img/womens/yellow-track-suit.png",
         price: 135
@@ -226,6 +249,7 @@ const SHOP_DATA = [
       {
         id: 29,
         name: 'White Blouse',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
         // imageUrl: "/images/shop-img/womens/white-vest.png",
         price: 20
@@ -240,6 +264,7 @@ const SHOP_DATA = [
       {
         id: 30,
         name: 'Camo Down Vest',
+         status:'active',
         imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
         // imageUrl: "/images/shop-img/mens/camo-vest.png",
         price: 325
@@ -247,6 +272,7 @@ const SHOP_DATA = [
       {
         id: 31,
         name: 'Floral T-shirt',
+         status:'active',
         imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
         // imageUrl: "/images/shop-img/mens/floral-shirt.png",
         price: 20
@@ -254,6 +280,7 @@ const SHOP_DATA = [
       {
         id: 32,
         name: 'Black & White Longsleeve',
+         status:'active',
         imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
         // imageUrl: "/images/shop-img/mens/long-sleeve.png",
         price: 25
@@ -261,6 +288,7 @@ const SHOP_DATA = [
       {
         id: 33,
         name: 'Pink T-shirt',
+         status:'active',
         imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
         // imageUrl: "/images/shop-img/mens/pink-shirt.png",
         price: 25
@@ -275,6 +303,7 @@ const SHOP_DATA = [
       {
         id: 35,
         name: 'Burgundy T-shirt',
+        status:'inactive',
         imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
         // imageUrl: "/images/shop-img/mens/polka-dot-shirt.png",
         price: 25
