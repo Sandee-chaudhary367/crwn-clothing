@@ -12,6 +12,7 @@ export const selectCollectionsForPreview = createSelector(
   collections => Object.keys(collections).map(key => collections[key])
 );
 
+//currying
 export const selectCollection = collectionUrlParam =>
   createSelector(
     [selectCollections],
