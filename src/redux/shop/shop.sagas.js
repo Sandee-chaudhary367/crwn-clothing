@@ -14,12 +14,14 @@ import ShopActionTypes from './shop.types';
 
 export function* fetchCollectionsAsync() {
   try {
+    console.log("fetching starts")
     const collectionRef = firestore.collection('collections');
     const snapshot = yield collectionRef.get();
     const collectionsMap = yield call(
       convertCollectionsSnapshotToMap,
       snapshot
     );
+    console.log("fetching completed")
     yield put(fetchCollectionsSuccess(collectionsMap));
   } catch (error) {
     yield put(fetchCollectionsFailure(error.message));
@@ -31,6 +33,7 @@ export function* fetchCollectionsStart() {
     ShopActionTypes.FETCH_COLLECTIONS_START,
     fetchCollectionsAsync
   );
+  
 }
 
 export function* shopSagas() {

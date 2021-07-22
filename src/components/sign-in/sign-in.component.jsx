@@ -29,13 +29,11 @@ class SignIn extends React.Component {
     event.preventDefault();
     const { emailSignInStart } = this.props;
     const { email, password } = this.state;
-
     emailSignInStart(email, password);
   };
 
   handleChange = event => {
     const { value, name } = event.target;
-
     this.setState({ [name]: value });
   };
 

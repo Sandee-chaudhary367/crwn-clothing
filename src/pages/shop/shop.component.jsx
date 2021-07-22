@@ -9,14 +9,16 @@ import CollectionPageContainer from '../collection/collection.container';
 
 class ShopPage extends React.Component {
   componentDidMount() {
+    console.log(" componentDidMount Shop")
     const { fetchCollectionsStart } = this.props;
 
     fetchCollectionsStart();
+    console.log("fetchCollectionsStart called")
   }
 
   render() {
     const { match } = this.props;
-
+    console.log("render in shop")
     return (
       <div className='shop-page'>
         <Route
@@ -33,9 +35,11 @@ class ShopPage extends React.Component {
   }
 }
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = dispatch =>{
+  console.log("mapDispatchToProps in shop")
+  return ({
   fetchCollectionsStart: () => dispatch(fetchCollectionsStart())
-});
+})};
 
 export default connect(
   null,
